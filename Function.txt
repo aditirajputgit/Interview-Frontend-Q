@@ -1,0 +1,8 @@
+why do we need arrow function 
+It increase the feability and readibility of code
+-> It is easier to understand 
+
+Higher Order Function (HOC) are a pattern in a react that allow you to use componet logic
+They are function that  take the componet and return a new componet 
+They take a component as a input and return a new componet and they return componrt with the name of Componet 
+

@@ -1,0 +1,34 @@
+#Difference between props and state 
+
+Props - it is used for transfer data from paresnt component to child component 
+props are immutable . It can't be change .
+props make code reusable 
+Props are read only for the component that receive the data 
+Can be access using this.props 
+
+
+State is used to store the data within the component 
+state are mutual . They can be change within the componet 
+it is used to manage the componet data 
+State is initalized and manage the within the componet 
+In functional componet we use - useState and in class componet we use - this.state
+
+
+
+#Life cycle of recat js
+Life cycle in react js refer to the evenet or series that happen from initalized to destruction of evenet
+Before Recat16.3 lifecycel is only availbel in class componet , but now function also have life cycel in hook that is useEffect
+
+Life cycle in class componet includes - 3 phases 
+1. Mounting Phase 
+2. Upading Phase 
+3. Unmouting Phase 
+
+#Mounting Phase - Koi bhi instance ya event dom m create hona mounting phase m a jat eh 
+constructor() -> render() -> componentDidMouth()
+
+#Upading Phase - Kuch bhi chnages karna apne component m and in another word it is used to render the chnages
+componentDidMouth()
+
+#Unmouting Phase or method - it is called when the component is being removed from the dom 
+componentWillUnmount()

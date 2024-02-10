@@ -1,0 +1,16 @@
+React kudh the virtual dom bnata h fir original dom se sath compare karta h .
+React ek open source libary h . Here many developer can contribute 
+React m hum separate componet create krte h 
+
+
+JSX  it stands for javascript xml file . Which allow developer to writehtml file in javascript
+It used to make code more readable . JSX get complied into regular js file by use of babel language
+Babel transforms JSX syntax into function calls such as React.createElement()
+
+Functional component are more permformant than class component 
+
+Render() in react js it is used to describe the user interface which current state 
+
+componentDidMouth() - it is method which is called afetr creating an event or upadating that event or making any changes in the event 
+componentWillUnmount() - it is called before destruction of componet . It is used for cleaning up the task 
+

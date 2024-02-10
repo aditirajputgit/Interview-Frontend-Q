@@ -18,14 +18,10 @@ function newString(a,b){
 }
 
 function tryingAgain(a,b){
-    let i = 0,j = 0 ,c=a[0];
+    let i = 0,j = 0 ,c="";
     while(i < a.length && i < b.length){
         for(i; i<a.length&&i<b.length;i++){
-             if (i !== 0) {
                c += a[i] + b[i];
-             } else {
-               c += b[i];
-             }
         }
         while(i<a.length){
             c += a[i];
@@ -38,6 +34,15 @@ function tryingAgain(a,b){
         console.log(c);
 }
 
+function anotherAndSimple(a,b){
+    let m = Math.min(a.length,b.length);
+    let temp ="" , i =0;
+    for(i;i<m;i++){
+        temp = temp + a[i] + b[i];
+    }
+    return temp + a.slice(i) + b.slice(i);
+}
+
 let a = "abcdef";
 let b = "123";
-tryingAgain(a, b);
+console.log(anotherAndSimple(a,b));
