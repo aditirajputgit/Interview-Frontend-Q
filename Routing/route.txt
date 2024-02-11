@@ -1,0 +1,7 @@
+#how can you perform routing in react js 
+Routing can be done by using 3 part libary which is react-route-dom 
+then we need to setup the route 
+by browserRoute , route , switch 
+Route is used to define the path , Switch is used to define specific path only show that path not other path 
+
+Link these route using {LINK} from "react-route-dom
