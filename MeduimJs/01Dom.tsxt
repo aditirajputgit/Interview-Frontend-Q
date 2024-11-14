@@ -1,0 +1,24 @@
+Windows ki ek method hoti h document -> Usse document m treee like structure h.
+
+1. InnerHtml  -> ye html ke tag ek sath result show krta h || Interprets HTML tags, returns or sets the HTML structure inside an element.
+2.innerText  -> text content show krta h || Returns or sets only visible text, ignoring HTML tags and hidden elements.
+3.textContent  ->  Returns or sets all text (visible and hidden) as plain text without interpreting HTML tags.
+
+In JavaScript, innerHTML, innerText, and textContent are properties used to get or set the content of an HTML element.
+
+InnerHtml ->
+const div = document.getElementById("myDiv");
+div.innerHTML = "<b>Hello, World!</b>"; // Sets HTML content
+console.log(div.innerHTML); // Output: "Hello, World!" -> bold text
+
+innerText  -> 
+const div = document.getElementById("myDiv");
+div.innerText = "<b>Hello, World!</b>"; // Sets plain text content (HTML tags are not interpreted)
+console.log(div.innerText); // Output: "<b>Hello, World!</b>" -> give bold tag 
+
+textContent  -> 
+*** faster than the innertext beacuse it doen't check the visibilty of the text like display: none
+const div = document.getElementById("myDiv");
+div.textContent = "<b>Hello, World!</b>"; // Sets plain text content
+console.log(div.textContent); // Output: "<b>Hello, World!</b>"
+

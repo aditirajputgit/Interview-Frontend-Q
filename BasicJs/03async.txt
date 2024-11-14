@@ -1,0 +1,5 @@
+synchronous code -> are the code which are run line by line 
+whenever we call a function -> vo callstack m a jata h 
+
+Basically -> sab ek ek kar ke callstack m jata [fir sari cheeje run krta h aur jo aysnc code hota h vo web api m jata ->
+fir vo callback queue m jata h ]

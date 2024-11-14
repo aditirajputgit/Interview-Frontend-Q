@@ -1,0 +1,54 @@
+The setTimeout function in JavaScript does not directly create files or interact with the file system. 
+
+we can do -> setTimeout('console.log("aditi")')  //output will be aditi
+
+setTimeout -> used to return the value from that value we can clear the timeout by clearTimeout or clearInterval
+const timer = setTimeout('console.log("aditi")',2000)
+
+const timer = setTimeout(a,3000)  //value print ho jayei
+connst timer = setTimeout(a(),3000) //value print ni hogi , idar isse undefine[a()] milega kuki function m kuch return value ni h ishly
+const timer = setTimeout(b(),3000)
+
+function a(){
+    console.log("Yooo")
+}
+
+function b(){
+    return 4+10
+}
+
+{
+    const timer = setTimeout('console.log("adii)',1000);
+    const timer1 = setTimeout(console.log("adi1",6000));
+}
+************ setTimeout(function, delay); **********
+setTimeout(() =>{
+
+},2000)
+
+
+********************** Spread Operator **************************
+--> individual se yad rhna
+Purpose: The spread operator "spreads" or expands the elements of an array, object, or iterable into individual elements or properties.
+Use Case: It is mainly used to combine, copy, or expand arrays and objects.
+1.Copying Arrays -> const array2 = [...array1]; 
+2.Combining Arrays  -> const combined = [...arr1, ...arr2];
+3.Expanding Function Arguments   -->
+function add(a, b, c) {
+    return a + b + c;
+}
+
+const numbers = [1, 2, 3];
+console.log(add(...numbers)); // Output: 6
+4.Copying and Merging Objects like a function   -> const merged = { ...obj1, ...obj2 };
+
+
+*************************** Rest Operator *********************
+used to change individual into aaray[used i func parameters]
+Purpose: The rest operator "collects" multiple elements into a single array or object, capturing any remaining elements or properties.
+Use Case: It’s mainly used in function parameter lists to handle an arbitrary number of arguments or to destructure arrays and objects.
+const [first, ...rest] = [10, 20, 30, 40];
+
+console.log(first); // Output: 10
+console.log(rest);  // Output: [20, 30, 40]
+// 'rest' collects all elements after the first one

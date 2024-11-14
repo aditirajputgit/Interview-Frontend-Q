@@ -1,0 +1,22 @@
+There is difference between in udefine and not-define
+
+undefined ->
+1.undefined is a primitive value in JavaScript, and it is the default value assigned to a variable that has been declared but not yet assigned a value.
+2.It is a type and a value in JavaScript.
+
+Not-define -> 
+1."Not defined" refers to trying to access a variable that has not been declared at all (i.e., it doesn't exist in the scope). This results in a ReferenceError.
+2.A variable that hasn’t been declared cannot be accessed, and trying to do so will throw an error in JavaScript.
+
+
+Whenever we declare any element without using let,const and var -> we are able to access them without any error. There is no hosting problem in this declaration and variable directly created in the windows. We are allowed to use this method we have to create the variable using let , const and var.
+
+To prevent above error we use -> "use strict" -> If we try to declare variable without let,var and const then it will show the error , thats why we use the use-strict
+
+
+############## TODOS #####################3
+Difference between prompt,confirm and alert
+Difference between slice and splice
+type of functions snd classes
+why we use script after body not in head most time
+destructing i have left the topic for now 

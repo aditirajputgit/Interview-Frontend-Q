@@ -1,0 +1,6 @@
+function mult(a,b=1){
+    return a*b;
+}
+
+mult(2,null)   //it will return 0 beacuse b will take null value and empty string  value , behind the sence
+javascript will convert falsly value in zero then ans will be zero

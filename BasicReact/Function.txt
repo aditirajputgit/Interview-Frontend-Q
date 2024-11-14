@@ -1,3 +1,11 @@
+Difference between functions and method
+1.A function is a  block of code designed to perform a specific task.
+2.Functions can be called independently, and they don’t need to be associated with any particular object.
+
+1.A method is essentially a function that is defined within object.
+2.Methods cannot be called independently , they required any object or classes
+
+
 why do we need arrow function 
 It increase the feability and readibility of code
 -> It is easier to understand 
@@ -6,3 +14,48 @@ Higher Order Function (HOC) are a pattern in a react that allow you to use compo
 They are function that  take the componet and return a new componet 
 They take a component as a input and return a new componet and they return componrt with the name of Componet 
 
+*** callback function vo hote h jinhe hum kise function m passs krte h 
+*** High order function vo hote h jin function m hum ye pass krte h 
+
+{function a(b){
+    // console.log("aditi")
+    b();  //a will become a high order function because is the argument we are getting b
+    console.log(b())
+}
+
+function sayHi(){
+    let a = 23;
+    let b = 5;
+    console.log("Hy aditi j")
+    return a+b
+}
+sayHi.age = 98
+//sayHi().age   //idar value assigned ni hogi vo error dega
+// console.log(sayHi)  value will be assigned here
+const x = sayHi
+console.log(x.age)
+a(x)}
+
+
+
+function behind the sence object hote h to unhe object mila aur usne hum value assign kr dete h
+
+A callback function in JavaScript is a function that is passed into another function as an argument and is executed (or "called back") at a later time
+
+In how many types we can declare the functions ->
+//function declaration ->
+function square(){
+    return 3*3
+}
+
+//function expression ->
+const square = function(){
+    return 3*3
+}
+
+//arrow function declaration
+const square = () =>{
+    return 3*3
+}
+or
+const square = () => 3*3     //explicity return kr deta h humne return keyword ka use ni krna pdta h

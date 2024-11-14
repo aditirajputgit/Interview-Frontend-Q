@@ -20,7 +20,7 @@ Life cycle in react js refer to the evenet or series that happen from initalized
 Before Recat16.3 lifecycel is only availbel in class componet , but now function also have life cycel in hook that is useEffect
 
 Life cycle in class componet includes - 3 phases 
-1. Mounting Phase 
+1. Mounting Phase  ggg
 2. Upading Phase 
 3. Unmouting Phase 
 

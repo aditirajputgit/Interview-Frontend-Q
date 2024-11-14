@@ -1,0 +1,102 @@
+
+****************** LOOPS  ******************
+let fruits = ["Apple","Banana","grapes"]
+let userInfo = {
+    firstName : "Aditi",
+    lastNmae : "Rajput",
+    profession : "Developer"
+}
+// for(let i =0;i<fruits.length;i++){
+//     console.log(fruits[i])
+// }
+// console.log("hhhhhhh")
+for(let fruit of fruits){
+    console.log(fruit)
+}
+
+console.log("tttt")
+
+for(let user in userInfo){
+    console.log(user , ": " ,userInfo[user])
+}
+
+We can you Object to take the key and values
+const userKeys = Object.keys(userInfo);
+const userValues = Object.values(userInfo);
+const userEnteries = Object.entries(userInfo);
+
+console.log("User keys ",userKeys);
+console.log("User Vlaues ",userValues);
+console.log("User Enter ",userEnteries)
+
+*******************************forEach************************
+forEach does not return a new array. It simply applies the function to each item.
+forEach is a method in JavaScript used to iterate over each item in an array and execute a function for each element.
+It is a best example of HOC
+
+let fruits = ["Apple","Banana","kiwi","papaya"];
+
+fruits.forEach(function(fruit){
+    console.log(fruit)
+})
+
+function ansFun(fruit){
+    console.log(fruit)
+}
+
+
+************************ Map ********************************
+1.It doesn't destory the existing array , it makes the new array.
+2.map is a method in JavaScript used to transform each element in an array and create a new array with the transformed values
+   ->element: The current element being processed.
+   ->index (optional): The index of the current element.
+   ->array (optional): The entire array being looped through.
+
+3.Each element in the new array is the result of the callback function’s return value.
+4.It doesn't support break and continues
+
+const newMonths = months.map((month) => {
+    return month.toUpperCase()
+})
+// agar second argument hum pass kr dege to vo index le lega
+//agar third argument pass krte h to vo array ay object ho skta h poora jis pr hum map lga rhe h 
+const newMonths = months.map((month,index,arr) => {
+    return index+1
+})
+
+******************** Filter *******************
+It has the simialar propety like map
+let students = [
+    {name:"Aditi" , age: 21 , status: true , subject:["english","maths","pt"]},
+    {name:"Nimish ji" , age: 23 , status: false,subject:["english","maths","pt","hindi"]},
+    {name:"Aman" , age: 19 , status: false,subject:["english","maths","hindi"]},
+]
+// const newMonths = months.filter((month,index) => {
+//     // return month.toLowerCase().includes('m')
+//     return index > 3
+// })
+
+// console.log(newMonths)
+
+const newAge = students.filter((student) => {
+     return student.subject.includes("hindi")
+})
+
+console.log(newAge)
+
+****************************** Some || Every ************************
+In JavaScript, some and every are array methods used to test whether elements in an array meet certain conditions. 
+They both return a boolean value based on the test results.
+
+some
+some checks if at least one element in the array satisfies the given condition.
+It returns true as soon as it finds one element that passes the test; otherwise, it returns false.
+
+const numbers = [1, 2, 3, 4, 5];
+const hasEvenNumber = numbers.some(number => number % 2 === 0);
+console.log(hasEvenNumber); // Output: true (because 2 and 4 are even)
+
+every
+every checks if all elements in the array satisfy the given condition.
+It returns true only if all elements pass the test; if any element fails, it returns false.
+
